@@ -15,4 +15,18 @@ class EmployeeNotFoundAdvice {
 	String reportNotFoundHandler(ReportNotFoundException ex) {
 		return ex.getMessage();
 	}
+	
+	@ResponseBody
+	@ExceptionHandler(QueryReturnedNoDataException.class)
+	@ResponseStatus(HttpStatus.NOT_FOUND)
+	String queryReturnedNoDataException(QueryReturnedNoDataException ex) {
+		return ex.getMessage();
+	}
+	
+	@ResponseBody
+	@ExceptionHandler(EmptyDatebaseException.class)
+	@ResponseStatus(HttpStatus.NOT_FOUND)
+	String emptyDatebaseException(EmptyDatebaseException ex) {
+		return ex.getMessage();
+	}
 }
