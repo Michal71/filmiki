@@ -49,4 +49,5 @@ public class ReportCreator {
 		Report report = new Report(id, characterPhrase, planetName, results);
 		return report;
 	}
+	
 }

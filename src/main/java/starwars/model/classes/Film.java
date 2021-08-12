@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public @Data class Film {
+	
 	private String filmId;
 	@JsonProperty("title")
 	private String title;
@@ -20,5 +21,6 @@ public @Data class Film {
     	String id = urlSplit[urlSplit.length - 1];
     	this.setFilmId(id);
 	}
+	
 }
 

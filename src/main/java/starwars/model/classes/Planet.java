@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public @Data class Planet {
+	
     private String planetId;
     private String name;
     private String url;
@@ -16,4 +17,5 @@ public @Data class Planet {
     	String id = urlSplit[urlSplit.length - 1];
     	this.setPlanetId(id);
 	}
+	
 }

@@ -18,6 +18,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Builder
 public @Data class Report {
+	
 	@JsonProperty("report_id")
 	private @Id Long reportId;
 	@JsonProperty("query_criteria_character_phrase")
@@ -27,4 +28,5 @@ public @Data class Report {
 	@JsonProperty("results")
 	@ElementCollection
 	private List <Result> results;
+	
 }

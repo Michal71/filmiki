@@ -11,8 +11,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public @Data class ReportQuery {
+	
 	@JsonProperty("query_criteria_character_phrase")
 	private String queryCharacter;
 	@JsonProperty("query_criteria_planet_name")
 	private String queryPlanet;
+	
 }

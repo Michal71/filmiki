@@ -36,5 +36,6 @@ public class CharacterGetter {
         }
         return list;
 	}
+	
 }
 

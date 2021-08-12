@@ -13,8 +13,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public @Data class CharacterQuery {
+	
     @JsonProperty("next")
     private String next; 
     @JsonProperty("results")
     private List<Character> results;   
+    
 }

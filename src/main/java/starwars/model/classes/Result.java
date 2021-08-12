@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Embeddable  
 public @Data class Result {
+	
 	@JsonProperty("film_id")
 	private String filmId;
 	@JsonProperty("film_name")
@@ -23,6 +24,6 @@ public @Data class Result {
 	@JsonProperty("planet_id")
 	private String planetId;
 	@JsonProperty("planet_name")
-	private String planetName;
-    
+	private String planetName; 
+	
 }

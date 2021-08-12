@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public @Data class Character {
+	
     private String characterId;
     private String name;
     private String homeworld;
@@ -23,4 +24,5 @@ public @Data class Character {
     	String id = urlSplit[urlSplit.length - 1];
     	this.setCharacterId(id);
 	}
+	
 }
